@@ -1,0 +1,8 @@
+.cache/
+a.out
+compile_commands.json
+main-out.c
+remove-c-comment.c
+doc/
+tmpdata/
+main.c
