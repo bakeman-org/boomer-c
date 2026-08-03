@@ -1,8 +1,10 @@
+all: try-build-static
+
 clang-build:
 	clang main-embed.c -lX11 -lGL -lGLEW -lm -lXrandr -std=c23
 
 try-build-static:
-	clang main-embed.c -std=c23 \
+	clang -o boomer-c main-embed.c -std=c23 \
 	-l:libX11.a \
 	-l:libxcb.a -l:libXau.a -l:libXdmcp.a -l:libXrandr.a \
 	-l:libGLEW.a -l:libXext.a -l:libXrender.a -l:libX11.a \
@@ -100,3 +102,10 @@ try-build-static:
 	-lGLX -lGL \
 	-Wl,--as-needed \
 	-Wl,-z,relro,-z,now
+
+install:
+	make -B
+	cp boomer-c /usr/local/bin/boomer-c
+
+uninstall:
+	test -f /usr/local/bin/boomer-c && rm /usr/local/bin/boomer-c
