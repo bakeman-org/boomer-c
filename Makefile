@@ -104,11 +104,10 @@ try-build-static:
 	-Wl,-z,relro,-z,now
 
 install:
-	make -B
 	cp boomer-c /usr/local/bin/boomer-c
 
 uninstall:
 	test -f /usr/local/bin/boomer-c && rm /usr/local/bin/boomer-c
 
 wayland-version:	
-	cc -o boomer-c main-embed-wayland.c    -lX11 -lXrandr -lGL -lGLEW -lwayland-client -lm
+	clang -std=c23 -o boomer-c main-embed-wayland.c    -lX11 -lXrandr -lGL -lGLEW -lwayland-client -lm
