@@ -109,3 +109,6 @@ install:
 
 uninstall:
 	test -f /usr/local/bin/boomer-c && rm /usr/local/bin/boomer-c
+
+wayland-version:	
+	cc -o boomer-c main-embed-wayland.c    -lX11 -lXrandr -lGL -lGLEW -lwayland-client -lm
