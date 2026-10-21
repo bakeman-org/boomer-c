@@ -1353,7 +1353,7 @@ int main(int argc, char *argv[]) {
       case 'd': debug_mode = true; break;
       case 'o': cli_output_file = optarg; break;
       case 'h':
-        printf("boomer-c-1.0\nUsage: %s [options] [fragment.glsl] [vertex.glsl]\n"
+        printf("boomer-c-1.0\nUsage: %s [options] [vertex.glsl] [fragment.glsl]\n"
                "Options:\n  -d, --debug          Print debug logging.\n"
                "  -o, --output <path>  Specify file or directory to save (default: $HOME).\n"
                "  -h, --help           Show help.\n"
