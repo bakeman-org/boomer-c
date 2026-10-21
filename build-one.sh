@@ -1,4 +1,3 @@
-
 set -xe
 
-clang-22 one.c $(pkg-config --cflags --libs x11 xrandr gl glew) -o boomer-c -lm -lwayland-client -std=c23 
+clang-22 -std=c23 boomer-c.c $(pkg-config --cflags --libs x11 xrandr gl glew libpng xft lua5.4) -o boomer-c -lm -lwayland-client

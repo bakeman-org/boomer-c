@@ -3,7 +3,7 @@
 
 ```bash
 # 编译
-clang -std=c23 one.c $(pkg-config --cflags --libs x11 xrandr gl glew wayland-client) -o boomer -lm
+clang -std=c23 one.c $(pkg-config --cflags --libs x11 xrandr gl glew wayland-client) -o boomer-c -lm
 ```
 
 ## 🚀 运行与操作
@@ -68,3 +68,6 @@ windowed = false
 ## 📄 许可证
 
 本项目基于 MIT 许可证开源。请自由使用、修改和分发。
+
+# ref links
+- https://github.com/nick-bors/zooc

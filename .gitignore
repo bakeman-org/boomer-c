@@ -8,3 +8,6 @@ tmpdata/
 main.c
 boomer-c
 boomer
+*.png
+testdata/
+boomer-c-test
