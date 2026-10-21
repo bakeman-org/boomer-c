@@ -9,5 +9,5 @@ main.c
 boomer-c
 boomer
 *.png
-testdata/
+# testdata/
 boomer-c-test

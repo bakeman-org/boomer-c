@@ -16,7 +16,7 @@ font_name        = "monospace-14" -- Xft font pattern
 
 -- Output / debug
 output_path      = "."            -- where screenshots go (default: $HOME)
-debug            = false          -- debug logging to terminal
+debug            = true           -- debug logging to terminal
 
 -- Custom shaders (paths; embedded shaders are used if files are absent)
 vertex_shader    = "./vertex.glsl"
